@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+FMLCorePluginContainsFMLMod: true
+FMLAT: customscoreboard_at.cfg
+FMLCorePlugin: gloomyfolken.hooklib.example.ExampleHookLoader
+

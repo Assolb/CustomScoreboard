@@ -1,0 +1,546 @@
+{
+  "com/narutocraft/client/gui/RenderHudEvent": {
+    "name": "com/narutocraft/client/gui/RenderHudEvent",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "LockStdRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Pre;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "render(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V"
+      }
+    ]
+  },
+  "com/narutocraft/client/gui/SpellsHandler$1": {
+    "name": "com/narutocraft/client/gui/SpellsHandler$1",
+    "interfaces": [
+      "java/util/Comparator"
+    ]
+  },
+  "com/narutocraft/client/inventory/CAPCustomInventory": {
+    "name": "com/narutocraft/client/inventory/CAPCustomInventory",
+    "interfaces": [
+      "com/narutocraft/client/inventory/ICAPCustomInventory"
+    ]
+  },
+  "com/narutocraft/client/inventory/CAPCustomInventoryProvider": {
+    "name": "com/narutocraft/client/inventory/CAPCustomInventoryProvider",
+    "interfaces": [
+      "net/minecraftforge/common/capabilities/ICapabilitySerializable"
+    ],
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/common/capabilities/CapabilityInject;",
+        "target": "INVENTORY_CAP",
+        "value": {
+          "type": "CLASS",
+          "value": "Lcom/narutocraft/client/inventory/ICAPCustomInventory;"
+        }
+      }
+    ]
+  },
+  "com/narutocraft/client/inventory/CAPCustomInventoryStorage": {
+    "name": "com/narutocraft/client/inventory/CAPCustomInventoryStorage",
+    "interfaces": [
+      "net/minecraftforge/common/capabilities/Capability$IStorage"
+    ]
+  },
+  "com/narutocraft/client/inventory/CapabilityEventHandler": {
+    "name": "com/narutocraft/client/inventory/CapabilityEventHandler",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "attachCapability(Lnet/minecraftforge/event/AttachCapabilitiesEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPlayerClone(Lnet/minecraftforge/event/entity/player/PlayerEvent$Clone;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPlayerDeath(Lnet/minecraftforge/event/entity/living/LivingDeathEvent;)V"
+      }
+    ]
+  },
+  "com/narutocraft/client/inventory/GuiHandler": {
+    "name": "com/narutocraft/client/inventory/GuiHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/IGuiHandler"
+    ]
+  },
+  "com/narutocraft/client/inventory/InventoryNarutoCraft": {
+    "name": "com/narutocraft/client/inventory/InventoryNarutoCraft",
+    "interfaces": [
+      "net/minecraft/inventory/IInventory"
+    ]
+  },
+  "com/narutocraft/client/inventory/OpenInventoryEvent": {
+    "name": "com/narutocraft/client/inventory/OpenInventoryEvent",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "openInventory(Lnet/minecraftforge/client/event/GuiOpenEvent;)V"
+      }
+    ]
+  },
+  "com/narutocraft/client/keybind/ClientBind": {
+    "name": "com/narutocraft/client/keybind/ClientBind",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "keyEvent(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V"
+      }
+    ]
+  },
+  "com/narutocraft/client/keybind/CommandBinds": {
+    "name": "com/narutocraft/client/keybind/CommandBinds",
+    "interfaces": [
+      "net/minecraftforge/client/IClientCommand"
+    ]
+  },
+  "com/narutocraft/client/keybind/EventHandler": {
+    "name": "com/narutocraft/client/keybind/EventHandler",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "loginEvent(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V",
+        "values": {
+          "priority": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/fml/common/eventhandler/EventPriority;/HIGH"
+          }
+        }
+      }
+    ]
+  },
+  "com/narutocraft/client/keybind/RenderBindKeys": {
+    "name": "com/narutocraft/client/keybind/RenderBindKeys",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "renderButtons(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V"
+      }
+    ]
+  },
+  "com/narutocraft/client/keybind/TickHandler": {
+    "name": "com/narutocraft/client/keybind/TickHandler",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "tickEvent(Lnet/minecraftforge/fml/common/gameevent/TickEvent;)V"
+      }
+    ]
+  },
+  "com/narutocraft/client/render/ObjModel": {
+    "name": "com/narutocraft/client/render/ObjModel",
+    "interfaces": [
+      "com/narutocraft/client/render/IModelCustom"
+    ]
+  },
+  "com/narutocraft/client/render/ObjModelLoader": {
+    "name": "com/narutocraft/client/render/ObjModelLoader",
+    "interfaces": [
+      "com/narutocraft/client/render/IModelCustomLoader"
+    ]
+  },
+  "com/narutocraft/client/render/models/armor/RenderProtectors": {
+    "name": "com/narutocraft/client/render/models/armor/RenderProtectors",
+    "interfaces": [
+      "com/narutocraft/client/render/models/items/IRenderItem",
+      "net/minecraft/client/renderer/entity/layers/LayerRenderer"
+    ],
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "renderArmor(Lnet/minecraftforge/client/event/RenderPlayerEvent$Post;)V"
+      }
+    ]
+  },
+  "com/narutocraft/client/render/models/items/RenderDemonicFlute": {
+    "name": "com/narutocraft/client/render/models/items/RenderDemonicFlute",
+    "interfaces": [
+      "com/narutocraft/client/render/models/items/IRenderItem"
+    ]
+  },
+  "com/narutocraft/client/render/models/items/RenderKunai": {
+    "name": "com/narutocraft/client/render/models/items/RenderKunai",
+    "interfaces": [
+      "com/narutocraft/client/render/models/items/IRenderItem"
+    ]
+  },
+  "com/narutocraft/client/render/models/items/RenderRasenganBall": {
+    "name": "com/narutocraft/client/render/models/items/RenderRasenganBall",
+    "interfaces": [
+      "com/narutocraft/client/render/models/items/IRenderItem"
+    ]
+  },
+  "com/narutocraft/jutsu/RenderShadowClone$Factory": {
+    "name": "com/narutocraft/jutsu/RenderShadowClone$Factory",
+    "interfaces": [
+      "net/minecraftforge/fml/client/registry/IRenderFactory"
+    ]
+  },
+  "com/narutocraft/main/EntityRegistry": {
+    "name": "com/narutocraft/main/EntityRegistry",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/narutocraft/main/EntityRegistry",
+        "values": {
+          "modid": {
+            "value": "narutocraft"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registryEntity(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      }
+    ]
+  },
+  "com/narutocraft/main/NarutoCraft": {
+    "name": "com/narutocraft/main/NarutoCraft",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "com/narutocraft/main/NarutoCraft",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "modid": {
+            "value": "narutocraft"
+          },
+          "name": {
+            "value": "NarutoCraft"
+          },
+          "version": {
+            "value": "1.0"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance",
+        "value": {
+          "value": "narutocraft"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "com.narutocraft.main.ClientProxy"
+          },
+          "serverSide": {
+            "value": "com.narutocraft.main.CommonProxy"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "serverStarting(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V"
+      }
+    ]
+  },
+  "com/narutocraft/network/C0PacketGetBinds": {
+    "name": "com/narutocraft/network/C0PacketGetBinds",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/narutocraft/network/C0PacketGetBinds$Handler": {
+    "name": "com/narutocraft/network/C0PacketGetBinds$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/narutocraft/network/C1PacketGetKeybindProps": {
+    "name": "com/narutocraft/network/C1PacketGetKeybindProps",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/narutocraft/network/C1PacketGetKeybindProps$Handler": {
+    "name": "com/narutocraft/network/C1PacketGetKeybindProps$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/narutocraft/network/C2PacketSetBind": {
+    "name": "com/narutocraft/network/C2PacketSetBind",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/narutocraft/network/C2PacketSetBind$Handler": {
+    "name": "com/narutocraft/network/C2PacketSetBind$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/narutocraft/network/S0PacketOpenInventoryMessage": {
+    "name": "com/narutocraft/network/S0PacketOpenInventoryMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/narutocraft/network/S0PacketOpenInventoryMessage$Handler": {
+    "name": "com/narutocraft/network/S0PacketOpenInventoryMessage$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/narutocraft/network/S1PacketActivateSpell": {
+    "name": "com/narutocraft/network/S1PacketActivateSpell",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/narutocraft/network/S1PacketActivateSpell$Handler": {
+    "name": "com/narutocraft/network/S1PacketActivateSpell$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "gloomyfolken/hooklib/asm/AsmHook": {
+    "name": "gloomyfolken/hooklib/asm/AsmHook",
+    "interfaces": [
+      "java/lang/Cloneable",
+      "java/lang/Comparable"
+    ]
+  },
+  "gloomyfolken/hooklib/asm/At": {
+    "name": "gloomyfolken/hooklib/asm/At",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "gloomyfolken/hooklib/asm/Hook": {
+    "name": "gloomyfolken/hooklib/asm/Hook",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "gloomyfolken/hooklib/asm/Hook$LocalVariable": {
+    "name": "gloomyfolken/hooklib/asm/Hook$LocalVariable",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "gloomyfolken/hooklib/asm/Hook$ReturnValue": {
+    "name": "gloomyfolken/hooklib/asm/Hook$ReturnValue",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "gloomyfolken/hooklib/asm/HookLogger$SystemOutLogger": {
+    "name": "gloomyfolken/hooklib/asm/HookLogger$SystemOutLogger",
+    "interfaces": [
+      "gloomyfolken/hooklib/asm/HookLogger"
+    ]
+  },
+  "gloomyfolken/hooklib/asm/HookLogger$VanillaLogger": {
+    "name": "gloomyfolken/hooklib/asm/HookLogger$VanillaLogger",
+    "interfaces": [
+      "gloomyfolken/hooklib/asm/HookLogger"
+    ]
+  },
+  "gloomyfolken/hooklib/example/TestHooks": {
+    "name": "gloomyfolken/hooklib/example/TestHooks",
+    "annotations": [
+      {
+        "type": "SUBTYPE",
+        "name": "Lgloomyfolken/hooklib/asm/At;",
+        "id": 1,
+        "values": {
+          "point": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/InjectionPoint;/RETURN"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lgloomyfolken/hooklib/asm/Hook;",
+        "target": "getTotalArmorValue(Lnet/minecraftforge/common/ForgeHooks;Lnet/minecraft/entity/player/EntityPlayer;I)I",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "1"
+          },
+          "returnCondition": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/ReturnCondition;/ALWAYS"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lgloomyfolken/hooklib/asm/Hook;",
+        "target": "renderItem(Lnet/minecraft/client/renderer/RenderItem;Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/client/renderer/block/model/ItemCameraTransforms$TransformType;Z)V",
+        "values": {
+          "returnCondition": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/ReturnCondition;/ALWAYS"
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lgloomyfolken/hooklib/asm/At;",
+        "id": 2,
+        "values": {
+          "ordinal": {
+            "type": "INT",
+            "value": "-1"
+          },
+          "point": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/InjectionPoint;/METHOD_CALL"
+          },
+          "shift": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/Shift;/INSTEAD"
+          },
+          "target": {
+            "value": "renderItem"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lgloomyfolken/hooklib/asm/Hook;",
+        "target": "doRender(Lnet/minecraft/client/renderer/entity/RenderEntityItem;Lnet/minecraft/entity/item/EntityItem;DDDFF)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "2"
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lgloomyfolken/hooklib/asm/At;",
+        "id": 3,
+        "values": {
+          "point": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/InjectionPoint;/METHOD_CALL"
+          },
+          "shift": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/Shift;/INSTEAD"
+          },
+          "target": {
+            "value": "renderItem"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lgloomyfolken/hooklib/asm/Hook;",
+        "target": "renderItemModelIntoGUI(Lnet/minecraft/client/renderer/RenderItem;Lnet/minecraft/item/ItemStack;IILnet/minecraft/client/renderer/block/model/IBakedModel;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "3"
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lgloomyfolken/hooklib/asm/At;",
+        "id": 4,
+        "values": {
+          "point": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/InjectionPoint;/METHOD_CALL"
+          },
+          "shift": {
+            "type": "ENUM",
+            "value": "Lgloomyfolken/hooklib/asm/Shift;/INSTEAD"
+          },
+          "target": {
+            "value": "renderItem"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lgloomyfolken/hooklib/asm/Hook;",
+        "target": "renderItemSide(Lnet/minecraft/client/renderer/ItemRenderer;Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemCameraTransforms$TransformType;Z)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "4"
+          }
+        }
+      }
+    ]
+  },
+  "gloomyfolken/hooklib/minecraft/HookLibPlugin": {
+    "name": "gloomyfolken/hooklib/minecraft/HookLibPlugin",
+    "interfaces": [
+      "net/minecraftforge/fml/relauncher/IFMLLoadingPlugin"
+    ]
+  },
+  "gloomyfolken/hooklib/minecraft/HookLoader": {
+    "name": "gloomyfolken/hooklib/minecraft/HookLoader",
+    "interfaces": [
+      "net/minecraftforge/fml/relauncher/IFMLLoadingPlugin"
+    ]
+  },
+  "gloomyfolken/hooklib/minecraft/MinecraftClassTransformer": {
+    "name": "gloomyfolken/hooklib/minecraft/MinecraftClassTransformer",
+    "interfaces": [
+      "net/minecraft/launchwrapper/IClassTransformer"
+    ]
+  },
+  "gloomyfolken/hooklib/minecraft/PrimaryClassTransformer": {
+    "name": "gloomyfolken/hooklib/minecraft/PrimaryClassTransformer",
+    "interfaces": [
+      "net/minecraft/launchwrapper/IClassTransformer"
+    ]
+  },
+  "gloomyfolken/hooklib/minecraft/SecondaryTransformerHook": {
+    "name": "gloomyfolken/hooklib/minecraft/SecondaryTransformerHook",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lgloomyfolken/hooklib/asm/Hook;",
+        "target": "injectData(Lnet/minecraftforge/fml/common/Loader;[Ljava/lang/Object;)V"
+      }
+    ]
+  }
+}
